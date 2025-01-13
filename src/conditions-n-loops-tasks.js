@@ -478,7 +478,7 @@ function shuffleChar(str, iterations) {
     }
     shuffled = evenChars + oddChars;
   }
-  return shuffled;
+  return true;
 }
 
 /**
