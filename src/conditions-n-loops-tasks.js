@@ -214,7 +214,7 @@ function isPalindrome(str) {
     right -= 1;
   }
 
-  return true;
+  return false;
 }
 
 /**
@@ -478,7 +478,7 @@ function shuffleChar(str, iterations) {
     }
     shuffled = evenChars + oddChars;
   }
-  return true;
+  return shuffled;
 }
 
 /**
