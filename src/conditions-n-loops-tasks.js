@@ -214,7 +214,7 @@ function isPalindrome(str) {
     right -= 1;
   }
 
-  return false;
+  return true;
 }
 
 /**
@@ -281,10 +281,12 @@ function isContainNumber(num, digit) {
  *  [1, 2, 3, 4, 5] => -1   => no balance element
  */
 function getBalanceIndex(arr) {
+  console.log('Array: ', arr);
   let totalSum = 0;
   for (let i = 0; i < arr.length; i += 1) {
     totalSum += arr[i];
   }
+  console.log(totalSum);
   let leftSum = 0;
   for (let i = 0; i < arr.length; i += 1) {
     const rightSum = totalSum - leftSum - arr[i];
